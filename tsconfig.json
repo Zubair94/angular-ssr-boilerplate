@@ -1,0 +1,31 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "src",
+    "importHelpers": true,
+    "paths": {
+      "@app/*": ["app/*"],
+      "@model/*": ["app/model/*"],
+      "@env/*": ["app/environments/*"],
+      "@core/*": ["app/core/*"],
+      "@shared/*": ["app/shared/*"],
+      "@featured/*": ["app/featured/*"]
+    },
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "declaration": false,
+    "module": "es2015",
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowJs": true,
+    "target": "es5",
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "lib": [
+      "es2018",
+      "dom"
+    ]
+  }
+}

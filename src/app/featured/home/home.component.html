@@ -1,0 +1,11 @@
+<mat-toolbar color="primary" class="menu">
+  <h3 i18n="@@home-h3">Angular Universal App with i18n</h3>
+  <button mat-button [matMenuTriggerFor]="menu" i18n="@@home-button">Language</button>
+</mat-toolbar>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item [href]="resolveHref()">English</button>
+  <button mat-menu-item class="bangla" [href]="resolveHref()">বাংলা</button>
+</mat-menu>
+<div class="home">
+  <h1 i18n="@@home-msg">Welcome to Angular Server Side Rendered App with i18n</h1>
+</div>

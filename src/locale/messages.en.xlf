@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+        <trans-unit id="home-h3" datatype="html">
+            <source>Angular Universal App with i18n</source>
+            <target>Angular Universal App with i18n</target>
+            <context-group purpose="location">
+            <context context-type="sourcefile">app/featured/home/home.component.html</context>
+            <context context-type="linenumber">2</context>
+            </context-group>
+        </trans-unit>
+        <trans-unit id="home-button" datatype="html">
+            <source>Language</source>
+            <target>Language</target>
+            <context-group purpose="location">
+            <context context-type="sourcefile">app/featured/home/home.component.html</context>
+            <context context-type="linenumber">3</context>
+            </context-group>
+        </trans-unit>
+        <trans-unit id="home-msg" datatype="html">
+            <source>Welcome to Angular Server Side Rendered App with i18n</source>
+            <target>Welcome to Angular Server Side Rendered App with i18n</target>
+            <context-group purpose="location">
+            <context context-type="sourcefile">app/featured/home/home.component.html</context>
+            <context context-type="linenumber">10</context>
+            </context-group>
+        </trans-unit>
+    </body>
+  </file>
+</xliff>
