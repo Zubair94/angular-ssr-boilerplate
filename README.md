@@ -8,7 +8,8 @@ Server Side Rendering Platform Service for Native Browser Api Support(document, 
 Localizaiton supported for both Browser and Server Builds(Enables SEO Support for i18n)  
 
 # Dependencies
-NG Universal Package  
+Angular Universal Package
+Angular Material Package
 Check package.json for details.
 
 ## Development server
