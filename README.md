@@ -9,9 +9,6 @@ Localizaiton supported for both Browser and Server Builds(Enables SEO Support fo
 
 # Dependencies
 NG Universal Package  
-Boostrap(ng-bootstrap)  
-ngx-toastr  
-Angular Fontawesome Package  
 Check package.json for details.
 
 ## Development server
