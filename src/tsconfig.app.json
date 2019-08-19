@@ -10,7 +10,7 @@
     "typeRoots": [
       "node_modules/@types"
     ],
-    "module": "es2015",
+    "module": "esNext",
     "types": ["node"]
   },
   "exclude": [
