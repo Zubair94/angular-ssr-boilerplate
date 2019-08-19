@@ -3,8 +3,6 @@ import 'reflect-metadata';
 import * as express from 'express';
 import {join} from 'path';
 
-enableProdMode();
-
 // Express server
 const app = express();
 
