@@ -11,7 +11,7 @@
     "compile:server": "webpack --config webpack.server.config.js --progress --colors",
     "serve:ssr": "node dist/server",
     "build:ssr": "npm run build:client-and-server-bundles && npm run compile:server",
-    "build:client-and-server-bundles": "ng run angular-ssr:build:production-bn && ng run angular-ssr:build:production-en && ng run angular-ssr:server-bn:production && ng run angular-ssr:server-en:production",
+    "build:client-and-server-bundles": "ng run angular-ssr:build:production-bn && ng run angular-ssr:build:production-en && ng run angular-ssr:server-bn:production && ng run angular-ssr:server-en:production --bundleDependencies all",
     "start:ssr": "npm run build:ssr && npm run serve:ssr",
     "build:ssr-server": "npm run compile:server && npm run serve:ssr"
   },
@@ -41,9 +41,9 @@
     "@angular/cli": "~8.2.2",
     "@angular/compiler-cli": "~8.2.2",
     "@angular/language-service": "~8.2.2",
-    "@types/node": "~10.14.15",
     "@types/jasmine": "~2.8.8",
     "@types/jasminewd2": "~2.0.3",
+    "@types/node": "~10.14.15",
     "codelyzer": "~4.5.0",
     "jasmine-core": "~2.99.1",
     "jasmine-spec-reporter": "~4.2.1",
@@ -57,6 +57,7 @@
     "ts-node": "~8.3.0",
     "tslint": "~5.18.0",
     "typescript": "~3.4.5",
-    "webpack-cli": "^3.1.0"
+    "webpack-cli": "^3.3.7",
+    "webpack-node-externals": "^1.7.2"
   }
 }

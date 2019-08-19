@@ -1,10 +1,5 @@
 import 'zone.js/dist/zone-node';
 import 'reflect-metadata';
-import {enableProdMode} from '@angular/core';
-// Express Engine
-import {ngExpressEngine} from '@nguniversal/express-engine';
-// Import module map for lazy loading
-import {provideModuleMap} from '@nguniversal/module-map-ngfactory-loader';
 import * as express from 'express';
 import {join} from 'path';
 
@@ -21,17 +16,17 @@ const bnServer = require('./dist/server/bn/main');
 const languageEngines = [{
   id: 'bn',
   base: '/bn/',
-  engine: ngExpressEngine({
+  engine: bnServer.ngExpressEngine({
     bootstrap: bnServer.AppServerModuleNgFactory,
-    providers: [provideModuleMap(bnServer.LAZY_MODULE_MAP)]
+    providers: [bnServer.provideModuleMap(bnServer.LAZY_MODULE_MAP)]
   })
 },
 {
   id: 'en',
   base: '/en/',
-  engine: ngExpressEngine({
+  engine: enServer.ngExpressEngine({
     bootstrap: enServer.AppServerModuleNgFactory,
-    providers: [provideModuleMap(enServer.LAZY_MODULE_MAP)]
+    providers: [enServer.provideModuleMap(enServer.LAZY_MODULE_MAP)]
   })
 }];
 
