@@ -21,12 +21,16 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build or the `--aot` flag for ahead of time compilation.
 
 ## Build SSR for i18n (localization)
-
-Run `npm run start:ssr` to build the projet with SSR + locale(English and Bangla).
+Run to build and start application
+```
+npm run start:ssr
+``` 
 
 ## Only compile and serve server.ts
-
-Run `npm run build:ssr-server`.
+Run this command to compile universal nodejs server only
+```
+npm run build:ssr-server
+```
 
 ## SSR Important Notes!!!
 

@@ -57,14 +57,16 @@ app.get('*.*', express.static(DIST_FOLDER));
 Object.keys(languageEngines).forEach(key => {
   console.log(languageEngines[key].id);
   app.get(`${languageEngines[key].base}*`, (req, res) => {
-    //console.log(req);
-    //global['navigator'] = req['headers']['user-agent'];
     res.render(`${languageEngines[key].id}/index.html`, {
       req,
       res,
       engine: languageEngines[key].engine
     });
   });
+});
+
+app.get('*', (req, res) => {
+  res.render(`${"en/index.html"}`, {req, res, engine: languageEngines[1].engine})
 });
 
 // Start up the Node server
